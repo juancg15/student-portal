@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Student Portal – New Generation High School
 
-## Getting Started
+## CPRG 306 – Assignment 1
 
-First, run the development server:
+### Project Description
+A Student Portal built using Next.js, React, TypeScript, and Tailwind CSS. The website allows users to view, search, add, and remove students while displaying school statistics.
+
+### Group Members and Responsibilities
+
+**Juan Carlo Garcia**
+- Created the Next.js project and GitHub repository.
+- Developed StudentPortal, StudentList, StudentCard, and SearchBox.
+- Created the student data and TypeScript interface.
+- Tested the website features.
+
+**Gaurab Sapkota**
+- Developed Navbar, Footer, StatsPanel, and AddStudent.
+- Worked on website layout and styling.
+- Handled Vercel deployment.
+- Tested the website features.
+
+### Features
+- View, search, add, and remove students.
+- Show/hide student details.
+- Display student statistics and honour roll.
+- Clear all students.
+- Responsive design for mobile and desktop.
+
+### Running the Project
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Testing Results
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Test | Result |
+|---|---|
+| 1. Displays 8 students and correct statistics | PASS |
+| 2. Show/hide details works independently | PASS |
+| 3. Removing Grade 12 student updates counts | PASS |
+| 4. Uppercase search works | PASS |
+| 5. Searching "zzz" shows no results without changing statistics | PASS |
+| 6. Blank student names are rejected | PASS |
+| 7. Adding a student updates counts and resets form | PASS |
+| 8. Clear All resets students and statistics | PASS |
+| 9. Mobile layout works without horizontal scrolling | PASS |
+| 10. Navbar links navigate correctly | PASS |
 
-## Learn More;
+### Project Links
 
-To learn more about Next.js, take a look at the following resources:
+**GitHub:** https://github.com/juancg15/student-portal
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Vercel:** https://student-portal-t4zc.vercel.app/
